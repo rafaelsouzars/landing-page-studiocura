@@ -1,0 +1,8 @@
+export { default as Home } from './Home'
+export { default as Sobre } from './Sobre'
+export { default as Modalidades } from './Modalidades'
+export { default as Planos } from './Planos'
+export { default as Equipe } from './Equipe'
+export { default as Galeria } from './Galeria'
+export { default as Contato } from './Contato'
+export { default as NotFound } from './NotFound'
