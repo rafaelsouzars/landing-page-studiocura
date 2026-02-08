@@ -1,9 +1,14 @@
 import React from 'react'
+import { Element } from 'react-scroll'
 import './Equipe.css'
 
 const Equipe = () => {
-  return (
-    <section id='equipe' className='equipe'>Equipe</section>
+  return (    
+    <>
+      <Element name='equipe'>
+        <section className='main-container'>Equipe</section>
+      </Element>
+    </>
   )
 }
 

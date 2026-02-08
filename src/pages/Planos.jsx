@@ -1,9 +1,14 @@
 import React from 'react'
+import { Element } from 'react-scroll'
 import './Planos.css'
 
 const Planos = () => {
   return (
-    <section id='planos' className='planos'>Planos</section>
+    <>
+      <Element name='planos'>
+        <section className='main-container'>Planos</section>
+      </Element>
+    </>    
   )
 }
 
