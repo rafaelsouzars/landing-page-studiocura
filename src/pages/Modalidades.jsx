@@ -1,8 +1,9 @@
 import React from 'react'
+import './Modalidades.css'
 
 const Modalidades = () => {
   return (
-    <div>Modalidades</div>
+    <section id='modalidades' className='modalidades'>Modalidades</section>
   )
 }
 

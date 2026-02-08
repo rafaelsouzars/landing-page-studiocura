@@ -1,0 +1,7 @@
+.contato {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-height: 100vh;
+    border: 1px red solid;
+}

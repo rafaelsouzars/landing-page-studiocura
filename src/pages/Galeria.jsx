@@ -1,8 +1,9 @@
 import React from 'react'
+import './Galeria.css'
 
 const Galeria = () => {
   return (
-    <div>Galeria</div>
+    <section id='galeria' className='galeria'>Galeria</section>
   )
 }
 
