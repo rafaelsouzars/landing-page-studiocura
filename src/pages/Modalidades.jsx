@@ -1,9 +1,15 @@
 import React from 'react'
+import { Element } from 'react-scroll'
 import './Modalidades.css'
 
 const Modalidades = () => {
   return (
-    <section id='modalidades' className='modalidades'>Modalidades</section>
+    <>
+      <Element name='modalidades'>
+        <section className='main-container'>Modalidades</section>        
+      </Element>
+    </>
+    
   )
 }
 
