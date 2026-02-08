@@ -1,8 +1,9 @@
 import React from 'react'
+import './Planos.css'
 
 const Planos = () => {
   return (
-    <div>Planos</div>
+    <section id='planos' className='planos'>Planos</section>
   )
 }
 

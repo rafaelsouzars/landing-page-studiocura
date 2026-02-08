@@ -1,8 +1,9 @@
 import React from 'react'
+import './Contato.css'
 
 const Contato = () => {
   return (
-    <div>Contato</div>
+    <section id='contato' className='contato'>Contato</section>
   )
 }
 

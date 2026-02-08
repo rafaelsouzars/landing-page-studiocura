@@ -6,6 +6,20 @@
   --cor-background: #cad5de;
 }
 
+html {
+  width: 100dvw;
+  height: 100dvh;
+  border: 1px blue solid;
+}
+
+main {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 3px green solid;
+}
+
 .navbar {  
   /* flex-box */
   display: flex;
@@ -14,9 +28,12 @@
   justify-content: space-between; /* horizontal */
   /*align-content: flex-end;*/
   /* estilo do elemento */
+  position: sticky;
+  top: 0;
+  z-index: 9999;
   box-sizing: border-box;
   padding: 0px 20px;
-  width: 100dvw;
+  width: 100%;
   height: 50px;
   max-height: 120px;
   background-color: var(--cor-principal);    
