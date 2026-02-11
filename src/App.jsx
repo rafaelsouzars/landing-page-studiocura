@@ -1,11 +1,9 @@
-//import { useState } from 'react'
-//import { BrowserRouter, Routes, Route } from 'react-router-dom'
+//import { useEffect } from 'react'
 import { NavBar, Main } from './components'
-//import { Home, Sobre, Modalidades, Planos, Equipe, Galeria, Contato, NotFound } from './pages'
-import './App.css'
+//import './App.css'
+//import { useState } from 'react'
 
-function App() {
-  //const [count, setCount] = useState(0)
+function App() { 
 
   return (
     <>

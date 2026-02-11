@@ -3,7 +3,7 @@ import { Home, Sobre, Modalidades, Planos, Equipe, Galeria, Contato } from '../p
 
 const Main = () => {
   return (
-    <main>
+    <main id='container'>
       <Home/>
       <Sobre/>
       <Modalidades/>

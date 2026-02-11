@@ -3,10 +3,11 @@ import { Element } from 'react-scroll'
 import './Contato.css'
 
 const Contato = () => {
+
   return (
-    <>
+    <>      
       <Element name='contato'>
-        <section className='main-container'>Contato</section>
+        <section className='main-content'>Contato</section>
       </Element>
     </>    
   )

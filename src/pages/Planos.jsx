@@ -2,11 +2,12 @@ import React from 'react'
 import { Element } from 'react-scroll'
 import './Planos.css'
 
-const Planos = () => {
+const Planos = () => {  
+
   return (
-    <>
+    <>      
       <Element name='planos'>
-        <section className='main-container'>Planos</section>
+        <section id='planos' className='main-content'>Planos</section>
       </Element>
     </>    
   )

@@ -2,11 +2,12 @@ import React from 'react'
 import { Element } from 'react-scroll'
 import './Sobre.css'
 
-const Sobre = () => {
+const Sobre = () => {  
+
   return (
-    <>
+    <>      
       <Element name='sobre'>
-        <section className='main-container'>Sobre</section>        
+        <section className='main-content'>Sobre</section> 
       </Element>
     </>    
   )

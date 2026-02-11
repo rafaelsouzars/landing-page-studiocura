@@ -3,10 +3,11 @@ import { Element } from 'react-scroll'
 import './Galeria.css'
 
 const Galeria = () => {
+
   return (
-    <>
+    <>      
       <Element name='galeria'>
-        <section className='main-container'>Galera</section>
+        <section className='main-content'>Galera</section>
       </Element>
     </>    
   )
