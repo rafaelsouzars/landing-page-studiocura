@@ -1,7 +1,11 @@
-.home {
-    position: relative;
-    display: block;
-    width: 100%;
-    min-height: 100vh;
-    border: 1px red solid;
+/*@keyframes initOpacity {
+    0% { transform: opacity 0%; }
+    50% { transform: opacity 20%; }
+    100% { transform: opacity 40%; }
 }
+
+.main-content-home {
+    animation-name: initOpacity;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}*/
