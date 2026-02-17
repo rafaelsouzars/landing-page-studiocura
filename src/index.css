@@ -10,11 +10,11 @@
 
 :root {
   /* paleta de cores */
-  --cor-principal: #161f48;
-  --cor-secundaria: #2cabaa;
-  --cor-terciaria: #417571;
-  --cor-quarternaria: #d1deba;
-  --cor-background: #cad5de;
+  --cor-principal: #161f48; /* (r,g,b) value is (22,31,72) */
+  --cor-secundaria: #2cabaa; /* (r,g,b) value is (44,171,170) */
+  --cor-terciaria: #417571; /* (r,g,b) value is (65,117,113) */
+  --cor-quarternaria: #d1deba; /* (r,g,b) value is (209,222,186) */
+  --cor-background: #cad5de; /* (r,g,b) value is (202,213,222) */
   /* dimensões de componentes */
   --navbar-height: 50px;
 }
@@ -27,16 +27,27 @@ html, body {
   /* border: 1px blue solid; */    
 }
 
-body {
+body {  
   background-image: url('./assets/fig/background01.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed; 
   padding-top: var(--navbar-height);
+  /*opacity: 0; */ 
   /* Ajusta o scroll para considerar o menu fixo */
   /*scroll-padding-top: 50px;*/
   /* Adiciona espaço no topo do body para o menu fixo */
+  animation: landingPageIntro 2s ease-in;
+  /*animation-delay: 1s;*/
+  animation-fill-mode: forwards;
 }
+
+/* animação inicial do container home*/
+@keyframes landingPageIntro {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
 
 /*main::-webkit-scrollbar {
   display: unset;
@@ -65,7 +76,7 @@ body {
 .navbar-logo-image {
   width: 80px;
   height: 40px;
-  transition: color 1s easy-in-out;
+  transition: transform 0.4s ease-out;  
 }
 
 .navbar-logo-image:hover {
@@ -109,17 +120,26 @@ main {
   width: 100%;
   height: calc(100vh - var(--navbar-height)); 
   border-bottom: 1px lightgray solid;
-  background-color: var(--cor-quarternaria);
-  opacity: 40%;  
+  background-color: rgba(209,222,186, 0.6);    
   scroll-snap-align: start;
   /* Remove o padding-top anterior */
   padding: 0;  
   /* Centraliza conteúdo verticalmente */
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: 2rem;
-  /*animation: initOpacity 3s ease-in-out;*/  
+  /*animation: initOpacity 3s ease-in-out; animation: slideIn 2s ease-in-out infinite alternate;*/  
+  /*animation-name: homeIntro;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;*/
+}
+
+/* animação inicial do container home*/
+@keyframes homeIntro {
+  from {background-color: rgba(209,222,186, 0.0)}
+  to {background-color: rgba(209,222,186, 0.6)}
 }
 
 .main-content { 
@@ -127,8 +147,7 @@ main {
   width: 100%;
   height: calc(100vh - var(--navbar-height)); 
   border-bottom: 1px lightgray solid;
-  background-color: white;
-  opacity: 60%;
+  background-color: rgba(255,255,255, 0.7);  
   scroll-snap-align: start;
   /* Remove o padding-top anterior */
   padding: 0; 
@@ -137,6 +156,32 @@ main {
   align-items: center;
   justify-content: center;
   font-size: 2rem;
+}
+
+.main-container-buttons {
+  box-sizing: border-box;
+  margin: 20px 0px;
+}
+
+.main-content-button {
+  box-sizing: border-box;
+  width: 300px;
+  height: 40px;
+  margin: 0px 40px;
+  border: 0px;
+  border-radius: 20px;
+  background-color: var(--cor-terciaria);
+  color: white;
+  font-family: inherit;
+  transition: transform 0.1s ease-out;
+}
+
+.main-content-button:hover {
+  transform: scale(1.02);
+}
+
+.main-content-button:active {
+  transform: scale(0.98);
 }
 
 @media (prefers-color-scheme: light) {

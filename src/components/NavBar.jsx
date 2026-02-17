@@ -12,13 +12,13 @@ const NavBar = () => {
         </Link>               
       </div>
       <div>
-        <Link containerId='container' to='home' smooth={true} offset={-50} duration={500}>Home</Link>
-        <Link containerId='container' to='sobre' smooth={true} offset={-50} duration={500}>Sobre</Link>
-        <Link containerId='container' to='modalidades' smooth={true} offset={-50} duration={500}>Modalidades</Link>
-        <Link containerId='container' to='planos' smooth={true} offset={-50} duration={500}>Planos</Link>
-        <Link containerId='container' to='equipe' smooth={true} offset={-50} duration={500}>Equipe</Link>
-        <Link containerId='container' to='galeria' smooth={true} offset={-50} duration={500}>Galeria</Link>
-        <Link containerId='container' to='contato' smooth={true} offset={-50} duration={500}>Contato</Link>
+        <Link containerId='container' to='home' smooth={true} offset={-50} duration={200}>Home</Link>
+        <Link containerId='container' to='sobre' smooth={true} offset={-50} duration={200}>Sobre</Link>
+        <Link containerId='container' to='modalidades' smooth={true} offset={-50} duration={200}>Modalidades</Link>
+        <Link containerId='container' to='planos' smooth={true} offset={-50} duration={200}>Planos</Link>
+        <Link containerId='container' to='equipe' smooth={true} offset={-50} duration={200}>Equipe</Link>
+        <Link containerId='container' to='galeria' smooth={true} offset={-50} duration={200}>Galeria</Link>
+        <Link containerId='container' to='contato' smooth={true} offset={-50} duration={200}>Contato</Link>
       </div>        
     </nav>
   )
