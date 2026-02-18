@@ -24,15 +24,16 @@ html, body {
   width: 100%;
   height: 100%;
   overflow: hidden; /* evita a rolagem do body */
-  /* border: 1px blue solid; */    
+  /* border: 1px blue solid; */     
 }
 
 body {  
-  background-image: url('./assets/fig/background01.png');
+  background-image: url('./assets/fig/background01.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; 
   padding-top: var(--navbar-height);
+  transition: background-image 0.5s ease-out; 
   /*opacity: 0; */ 
   /* Ajusta o scroll para considerar o menu fixo */
   /*scroll-padding-top: 50px;*/
@@ -79,10 +80,10 @@ body {
   transition: transform 0.4s ease-out;  
 }
 
-.navbar-logo-image:hover {
+.navbar-logo-image:active {
   cursor: pointer;
   filter: drop-shadow(1px 1px 4px #d1deba);
-  transform: scale(1.1);
+  transform: scale(0.8);
 }
 
 .navbar a {  
@@ -176,15 +177,11 @@ main {
   transition: transform 0.1s ease-out;
 }
 
-.main-content-button:hover {
-  transform: scale(1.02);
-}
-
 .main-content-button:active {
   transform: scale(0.98);
 }
 
-@media (prefers-color-scheme: light) {
+/*@media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -192,4 +189,146 @@ main {
   button {
     background-color: #f9f9f9;
   }
+}*/
+
+/* Estilos Base - Mobile First (telas < 640px) */
+@media (max-width: 640px) {
+  /*body { font-size: 14px; }*/
+
+  body {
+    background-image: url('./assets/fig/background02.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+  }
+
+  .main-content-home {
+    font-size: 0.8rem;
+  }
+
+  .main-content {
+    font-size: 0.8rem;
+  }
+
+  .main-container-buttons span {
+    display: block;
+  }
+
+  .main-content-button {
+    width: 200px;
+    margin: 5px 40px;
+  }
+}
+
+/* Pequeno - Tablets/Celulares grandes (>= 640px) */
+@media (min-width: 640px) {
+  /*body { font-size: 16px; }*/
+
+  body {
+    background-image: url('./assets/fig/background02.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+  }
+
+  .main-content-home {
+    font-size: 1rem;
+  }
+
+  .main-content {
+    font-size: 1rem;
+  }
+
+  .main-content-button {    
+    width: 200px;
+    margin: 5px 40px;
+  }
+}
+
+/* Médio - Tablets em pé/Laptops pequenos (>= 768px) */
+@media (min-width: 768px) {
+
+  body {
+    background-image: url('./assets/fig/background02.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+  }
+
+  .main-content-home {
+    font-size: 1.5rem;
+  }
+
+  .main-content {
+    font-size: 1.5rem;
+  }
+
+  .main-content-button:hover {
+    transform: scale(1.02);
+  }
+
+  .container { width: 750px; }
+  
+}
+
+/* Grande - Laptops/Desktops (>= 1024px) */
+@media (min-width: 1024px) {
+
+  body {
+    background-image: url('./assets/fig/background01.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+  }
+
+  .container { width: 990px; }
+
+  .navbar-logo-image:hover {
+    cursor: pointer;
+    filter: drop-shadow(1px 1px 4px #d1deba);
+    transform: scale(1.1);
+  }
+
+  .main-content-home {
+    font-size: 2rem;
+  }
+
+  .main-content {
+    font-size: 2rem;
+  }
+
+  .main-content-button:hover {
+    transform: scale(1.02);
+  }
+
+}
+
+/* Extra Grande - Desktops grandes (>= 1280px) */
+@media (min-width: 1280px) {
+  .container { width: 1200px; }
+
+  .navbar-logo-image:hover {
+    cursor: pointer;
+    filter: drop-shadow(1px 1px 4px #d1deba);
+    transform: scale(1.1);
+  }
+
+  .main-content-button:hover {
+    transform: scale(1.02);
+  }
+}
+
+/* 2x Extra Grande - Monitores Widescreen (>= 1536px) */
+@media (min-width: 1536px) {
+  .container { width: 1400px; }
+
+  .navbar-logo-image:hover {
+    cursor: pointer;
+    filter: drop-shadow(1px 1px 4px #d1deba);
+    transform: scale(1.1);
+  }
+
+  .main-content-button:hover {
+    transform: scale(1.02);
+  }  
 }
